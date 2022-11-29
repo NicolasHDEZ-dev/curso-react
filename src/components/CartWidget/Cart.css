@@ -1,0 +1,9 @@
+.bi-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+    width: 5rem;
+    height: 5rem;
+}
