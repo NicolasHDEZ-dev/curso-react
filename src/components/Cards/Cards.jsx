@@ -1,71 +1,24 @@
 import React from 'react'
 import "./Cards.css"
 
-const Cards = () => {
+const Cards = ({info}) => {
+   
    
     return (
-        <div className="row row-cols-1 row-cols-md-2 g-4">
-        <div className="col">
-          <div className="card text-center">
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <button>Ver Mas</button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card text-center">
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <button>Ver Mas</button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card text-center">
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              <button>Ver Mas</button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card text-center">
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <button>Ver Mas</button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card text-center">
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <button className='text-center'>Ver Mas</button>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card text-center">
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <button>Ver Mas</button>
-            </div>
-          </div>
-        </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">      
+        <div className="card text-center">
+<img src={info.img} className="card-img-top" alt="foto"/>
+  <div className="card-body">
+    <h5 className="card-title fs-3">{info.nombre}</h5>
+    <p className="card-text fs-5">{info.description}</p>
+    <p className="card-text fs-4">${info.precio}</p>
+    <p className="card-text fs-5">Stock :{info.stock}</p>
+    <button className="btn btn-primary">Ver Mas</button>
+  </div>
       </div>
+</div>
+</div>        
   )
 }
 

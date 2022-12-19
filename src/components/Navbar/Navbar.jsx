@@ -21,12 +21,12 @@ const Navbar = () => {
           <NavLink className="nav-link active text-dark font-monospace fs-5 p-5" aria-current="page" to="/Contacto" >Contacto</NavLink>
         </li>        
         <li className="nav-item">
-          <NavLink t className="nav-link text-dark font-monospace fs-5 p-5" to="/Catalogo">Catálogo</NavLink>
+          <NavLink  className="nav-link text-dark font-monospace fs-5 p-5" to="/itemlistcontainer">Catálogo</NavLink>
         </li>
       </ul>
     </div>
     <ul>
-      <NavLink to="/Carrito">
+      <NavLink to="/carrito">
           <Cart/>
       </NavLink>
     </ul>
