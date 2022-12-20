@@ -21,9 +21,19 @@ const Navbar = () => {
           <NavLink className="nav-link active text-dark font-monospace fs-5 p-5" aria-current="page" to="/Contacto" >Contacto</NavLink>
         </li>        
         <li className="nav-item">
-          <NavLink  className="nav-link text-dark font-monospace fs-5 p-5" to="/itemlistcontainer">Catálogo</NavLink>
-        </li>
+          <NavLink  className="nav-link text-dark font-monospace fs-5 p-5" to="/catalogo">Catálogo</NavLink>
+        </li>       
       </ul>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><NavLink class="dropdown-item" to="/marca/fiat">Fiat</NavLink></li>
+            <li><NavLink class="dropdown-item" to="/marca/citroen" >Citroen</NavLink></li>
+            <li><NavLink class="dropdown-item" to="/marca/renault" >Renault</NavLink></li>
+          </ul>
+        </li>
     </div>
     <ul>
       <NavLink to="/carrito">
