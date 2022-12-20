@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import Logo from '../Logo/Logo'
 import Cart from '../CartLogo/Cart'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -25,9 +25,9 @@ const Navbar = () => {
         </li>       
       </ul>
       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
+          <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Marcas
+          </Link>
           <ul class="dropdown-menu">
             <li><NavLink class="dropdown-item" to="/marca/fiat">fiat</NavLink></li>
             <li><NavLink class="dropdown-item" to="/marca/citroen">citroen</NavLink></li>
