@@ -85,6 +85,8 @@ const ItemListContainer = () => {
 
  }, [marcaId])
 
+ console.log(data)
+
   return (
 <ItemList data = {data} />
   )

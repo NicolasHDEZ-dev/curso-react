@@ -29,9 +29,9 @@ const Navbar = () => {
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><NavLink class="dropdown-item" to="/marca/fiat">Fiat</NavLink></li>
-            <li><NavLink class="dropdown-item" to="/marca/citroen" >Citroen</NavLink></li>
-            <li><NavLink class="dropdown-item" to="/marca/renault" >Renault</NavLink></li>
+            <li><NavLink class="dropdown-item" to="/marca/fiat">fiat</NavLink></li>
+            <li><NavLink class="dropdown-item" to="/marca/citroen">citroen</NavLink></li>
+            <li><NavLink class="dropdown-item" to="/marca/renault">renault</NavLink></li>
           </ul>
         </li>
     </div>
