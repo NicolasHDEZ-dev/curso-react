@@ -1,8 +1,9 @@
 import React from 'react'
-import './Cart.css'
+import './CartLogo.css'
+
+const CartLogo = () => {
 
 
-const Cart = () => {
   return (
     <div>
         <a href='/#'>
@@ -14,4 +15,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default CartLogo
