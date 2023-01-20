@@ -7,3 +7,13 @@
     width: 5rem;
     height: 5rem;
 }
+
+.container{
+    display: flex;
+    text-align: center;
+}
+
+.numero{
+    text-decoration: none;
+    color: black;
+}

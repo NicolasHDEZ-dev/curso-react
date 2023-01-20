@@ -1,22 +1,8 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount'
-import { useCartContext } from '../../context/CartContext'
+import React from 'react'
 
-const ItemDetail = ({data = []}) => {
-
-  const [goToCart, setGoToCart] = useState(false)
-  const {addProduct} = useCartContext();
-
-
-  const onAdd = (quantity) => {
-    setGoToCart(true);
-    addProduct(data, quantity);
-  }
-
+const Detalle = ({data}) => {
   return (
-    <div className='text-center pt-2 m-4'>
-      <div id="carouselExampleIndicators" class="carousel slide shadow" data-bs-ride="true">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -24,13 +10,13 @@ const ItemDetail = ({data = []}) => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={data.img4} class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
       <img src={data.img2} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
       <img src={data.img3} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={data.img4} class="d-block w-100" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -42,22 +28,7 @@ const ItemDetail = ({data = []}) => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-  <section className='card d-flex container-fluid shadow bg-light text-dark'>
-    <div className='card-body'>
-    <div className='card-title'>
-    <h1 className='fw-bold font-monospace m-1'>{data.nombre}</h1>   
-    </div>
-    <p className='fst-italic fs-2'>{data.descripcion}</p>
-    <p className='fs-3 fst-italic'>${data.precio}</p>    
-    {
-      goToCart
-      ? <Link to={'/carrito'} className="btn btn-success">Termina tu compra</Link>
-      : <ItemCount initial={1} stock={5} onAdd={onAdd}/>
-    }
-    </div>
-    </section>
-    </div>
-    )
+  )
 }
 
-export default ItemDetail
+export default Detalle

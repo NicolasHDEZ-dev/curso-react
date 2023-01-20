@@ -7,7 +7,7 @@ import { NavLink, Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-<nav className="navbar navbar-expand-lg bg-white">
+<nav className="navbar navbar-expand-lg">
 <div className="container-fluid">
     <ul>
       <Logo/>
@@ -25,13 +25,13 @@ const Navbar = () => {
         </li>       
       </ul>
       <li class="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link className="nav-link dropdown-toggle text-dark font-monospace fs-5 p-5" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Marcas
           </Link>
           <ul class="dropdown-menu text-center">
-            <li><NavLink class="dropdown-item" to="/marca/fiat">Fiat</NavLink></li>
-            <li><NavLink class="dropdown-item" to="/marca/citroen">Citroen</NavLink></li>
-            <li><NavLink class="dropdown-item" to="/marca/renault">Renault</NavLink></li>
+            <Link class="dropdown-item text-dark" to="/marca/fiat">Fiat</Link>
+             <Link class="dropdown-item text-dark" to="/marca/citroen">Citroen</Link>
+             <Link class="dropdown-item text-dark" to="/marca/renault">Renault</Link>
           </ul>
         </li>
     </div>

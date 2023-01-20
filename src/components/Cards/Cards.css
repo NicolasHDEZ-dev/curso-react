@@ -1,9 +1,16 @@
 .card{
- width: 700px;
- margin: 5rem;
+ width: 500px;
+ margin-top: 5rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .contenedor{
-    width:700px;
-    height: 300px;
+    width:100%;
+    height: 100%px;
+}
+
+.imagen{
+width: 100%;
 }

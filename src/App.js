@@ -15,10 +15,9 @@ function App() {
   return (
     <Router>
       <CartProvider value='Nicolas'>      
-        <div>
+        <div className='navbarfondo'>
           <Navbar/>
-       </div>
-         
+       </div>        
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path="/catalogo" element={<ItemListContainer/>}/>

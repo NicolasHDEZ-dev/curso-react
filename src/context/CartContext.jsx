@@ -24,8 +24,6 @@ const estaEnElCart = (id) => carrito.find(product => product.id === id) ? true :
 
 const borrarProducto = (id) => setCart(carrito.filter(product => product.id !== id));
 
-console.log(carrito)
-
   return (
     <CartContext.Provider value={{
         clearCart,
