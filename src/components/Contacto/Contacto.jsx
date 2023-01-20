@@ -8,7 +8,7 @@ export const Contacto = () => {
     <div className='container justify-content-center'>
     <div className='tarjetas'>
       <div className='face front'>
-      <img src="http://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" alt="" />
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="" />
       <h2>Facebook</h2>
       </div>
       <div className='face back'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
 import CarritoItem from '../CarritoItem/CarritoItem';
@@ -7,6 +7,8 @@ import './Carrito.css';
 
 
 const Carrito = () => {
+
+  const [orderId , setOrderId] = useState()
 
 const {carrito, totalPrice} = useCartContext();
 
@@ -27,12 +29,26 @@ const handleClick = () => {
 const db = getFirestore();
 const ordenesCollection = collection(db,'ordenes');
 addDoc(ordenesCollection, orden)
-.then(({ id }) => console.log(id))
+.then((({id})=>{
+  setOrderId(id)
+  .clear()
+  }))}
 
+if(orderId){
+  return(
+  <>
+  <div className='container justify-content-center'>
+<div className='tarjeta bg-white'>
+<h1> Gracias por su compra </h1>
+<p>Su orden de compra es {orderId}</p>
+<Link className='btn btn-success' to='/'>Volver a Comprar</Link>
+</div>
+</div>
+</>
+  )
 }
 
-
-if(carrito.length === 0){
+if(carrito.length===0 && !orderId){
     return(
       <>
       <div className='container m-auto p-auto justify-content-center align-items-center'>
@@ -47,6 +63,7 @@ if(carrito.length === 0){
     );
   }
 
+  
   return (
     <>
     <div className='row row-cols-1 row-cols-md-3 g-4'>
@@ -61,17 +78,7 @@ if(carrito.length === 0){
     <button className='btn btn-success' onClick={handleClick}>Emitir Compra</button>
     </div>
     </>
-  )
+  );
 
-    if(handleClick){
-      return (
-        <>
-    <h1> Gracias por su compra </h1>
-    <Link to='/'>Volver a Comprar</Link>
-    </>
-      )
-    }
-
-}
-
+  }
 export default Carrito
