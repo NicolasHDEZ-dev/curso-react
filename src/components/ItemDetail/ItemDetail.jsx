@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCartContext } from '../../context/CartContext'
+import './ItemDetail.css'
 
 const ItemDetail = ({data = []}) => {
 
@@ -15,7 +16,7 @@ const ItemDetail = ({data = []}) => {
   }
 
   return (
-    <div className='text-center pt-2 m-4'>
+    <div className='text-center pt-2 m-4 carusel'>
       <div id="carouselExampleIndicators" class="carousel slide shadow" data-bs-ride="true">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -42,7 +43,7 @@ const ItemDetail = ({data = []}) => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-  <section className='card d-flex container-fluid shadow bg-light text-dark'>
+  <section className='card d-flex container-fluid shadow bg-light text-dark tarjetona'>
     <div className='card-body'>
     <div className='card-title'>
     <h1 className='fw-bold font-monospace m-1'>{data.nombre}</h1>   
