@@ -43,6 +43,7 @@ const ItemDetail = ({data = []}) => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
   <section className='card d-flex container-fluid shadow bg-light text-dark tarjetona'>
     <div className='card-body'>
     <div className='card-title'>

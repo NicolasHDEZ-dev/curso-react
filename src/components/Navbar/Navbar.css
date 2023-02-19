@@ -1,3 +1,4 @@
+
 .nav-item{
     list-style: none;
 }
@@ -5,4 +6,24 @@
 .dropdown-item{
     list-style: none;
     text-decoration: none;
+}
+
+.title{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+
+.clasico{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    align-items: center;
+}
+
+.medio{
+    display: flex;
+    padding-left: 409px;
+    margin: 20px;
 }
