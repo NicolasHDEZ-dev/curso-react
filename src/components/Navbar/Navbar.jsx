@@ -1,7 +1,5 @@
 import React from 'react'
 import './Navbar.css'
-import Logo from '../Logo/Logo'
-import CartLogo from '../CartLogo/CartLogo'
 import { NavLink, Link } from 'react-router-dom'
 
 
