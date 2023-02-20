@@ -1,7 +1,7 @@
 .itemCart{
     display: flex;
     border-bottom: 1px salmon;
-    width: 400px;
+    max-width: 500px;
     margin: 1rem auto;
 }
 
@@ -12,8 +12,4 @@
 
 .imagen{
     height: 100%;
-}
-
-.carrete{
-    width: 450px;
 }

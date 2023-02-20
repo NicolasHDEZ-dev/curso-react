@@ -24,6 +24,11 @@ const estaEnElCart = (id) => carrito.find(product => product.id === id) ? true :
 
 const borrarProducto = (id) => setCart(carrito.filter(product => product.id !== id));
 
+const validarFormulario = (campos) => {
+  return campos.some((campo) => campo === "")
+}
+
+
   return (
     <CartContext.Provider value={{
         clearCart,
@@ -32,6 +37,7 @@ const borrarProducto = (id) => setCart(carrito.filter(product => product.id !== 
         addProduct,
         totalPrice,
         totalProducts,
+        validarFormulario,
         carrito   
     }}>
         {children}

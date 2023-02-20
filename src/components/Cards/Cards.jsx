@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Cards = ({info}) => {   
    
     return (      
-        <div className='container justify-content-center'>
+        <div className='container'>
       <div className="card text-center shadow text-bg-light">
     <div className='contenedor'>
     <img src={info.img} className="card-img-top img-fluid justify-content-center imagen" alt=""/>

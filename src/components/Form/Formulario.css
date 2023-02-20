@@ -1,0 +1,9 @@
+.form__cart{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+}
+
+.form__text{
+    margin-top: 25px;
+}

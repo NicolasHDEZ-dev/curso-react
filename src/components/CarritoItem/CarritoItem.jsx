@@ -6,8 +6,8 @@ const CarritoItem = ({product}) => {
 const {borrarProducto} = useCartContext();
 
   return (
-    <div className="card mt-5 mb-5 text-center shadow carrete m-2 pr-0">
-  <div className="row container-fluid align-items-center justify-content-center ">
+    <div className="card mb-3 text-center m-auto shadow">
+  <div className="row g-0 container-fluid align-items-center justify-content-center">
     <div className="col-md-4">
       <img src={product.img} className="img-fluid rounded-start imagen" alt={product.nombre}/>
     </div>
