@@ -5,7 +5,7 @@ export const Contacto = () => {
   return (
     <>
     <h1 className='text-center'>Contactanos Aqui</h1>
-    <div className='container justify-content-center'>
+    <div className='d-flex mt-2 container-fluid justify-content-center'>
     <div className='tarjetas'>
       <div className='face front'>
       <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="" />
