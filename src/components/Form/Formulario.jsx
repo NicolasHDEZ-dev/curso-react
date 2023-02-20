@@ -1,17 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useState } from 'react'
-import { useCartContext } from '../../context/CartContext';
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import Swal from 'sweetalert2'
 import './Formulario.css'
 
 
 
 const Formulario = ({handleClick}) => {
-
-
-    const {validarFormulario } = useCartContext()
-
 
     const [comprador, setComprador]= useState({})
     const datosComprador = (e)=> {
@@ -22,10 +16,15 @@ const Formulario = ({handleClick}) => {
     }
     const sendOrder = (e) =>{
         e.preventDefault();
-        if(validarFormulario(datosComprador)){
-            console.log("hola")
-        }
-        handleClick(comprador)
+        if(comprador.nombre && comprador.apellido && comprador.email && comprador.telefono){
+            handleClick(comprador)  
+        } else {
+            Swal.fire({
+                title: "Oops!",
+                text: "Faltan campos por completar",
+                icon: "error",
+                });
+        }       
     }
     return (
     <>
@@ -65,7 +64,7 @@ const Formulario = ({handleClick}) => {
                 placeholder="Escriba su mensaje" 
                             
             />
-            <button className='btn__cart mt-2' type="submit">Enviar</button>
+            <button className='btn__cart mt-2 btn btn-success' type="submit">Emitir Compra</button>
         </form>
     </>
     );

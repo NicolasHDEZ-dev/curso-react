@@ -73,7 +73,7 @@ const Carrito = () => {
                       <h4 className='form__title'>Formulario de compra</h4>
                       <div className='cart__total'>
                           <p className='cart__total--p'>
-                              Total de compra  <span>$ARS {totalPrice()}</span>
+                              Total de compra  <span className='dinero text-light'>$ARS {totalPrice()}</span>
                           </p>
                       </div>
                       <Formulario handleClick = {handleClick}/>   
