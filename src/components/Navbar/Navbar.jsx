@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
 <nav className="navbar navbar-expand-lg">
   <div className="container-fluid">
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav32" aria-controls="navbarNav32" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <Link className="navbar-brand fs-2" to="/">Luxury Cars</Link>
-    <div className="collapse navbar-collapse container-fluid">
+    <div className="navbar-collapse container-fluid collapse" id="navbarNav32">
       <ul className="navbar-nav m-1">
         <li className="nav-item">
           <NavLink className="nav-link active" to="/Contacto">Contacto</NavLink>
