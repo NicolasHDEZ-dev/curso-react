@@ -4,3 +4,15 @@
 }
 }
 
+.tarjetona{
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+
+@media (max-width: 350px){
+    .tarjetona{
+        width: 200px;
+        
+    }
+    }

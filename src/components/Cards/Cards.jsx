@@ -6,8 +6,8 @@ const Cards = ({info}) => {
    
     return (      
         <div className='container'>
-      <div className="card text-center shadow text-bg-light">
-    <div className='contenedor'>
+      <div className="card text-center shadow text-bg-light cards">
+    <div className='contenedor m-2'>
     <img src={info.img} className="card-img-top img-fluid justify-content-center imagen" alt=""/>
     </div>
       <div className="card-body">

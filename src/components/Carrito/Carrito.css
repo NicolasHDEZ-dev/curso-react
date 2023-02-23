@@ -11,3 +11,9 @@
     border-radius: 5px;
     background-color: green;
 }
+
+@media (max-width: 768px){
+    .carts{
+        margin: 20px;
+    }
+    }
