@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.cce29ebf.css",
-    "main.js": "/static/js/main.77d943df.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/fiatlogo.png": "/static/media/fiatlogo.af5905ec1daa48054cee.png",
-    "static/media/argo.jpg": "/static/media/argo.24ea0d3d1b45896bdc0c.jpg",
-    "static/media/sandero.jpg": "/static/media/sandero.1f336f46c6e5d5a91751.jpg",
-    "static/media/citroenlogo.png": "/static/media/citroenlogo.ddedb4392f49c7a0a772.png",
-    "static/media/renaultlogo.png": "/static/media/renaultlogo.622787985b05b3024c8b.png",
-    "static/media/luxury-cars.png": "/static/media/luxury-cars.a948e467f0fe557fa219.png",
-    "index.html": "/index.html",
-    "main.cce29ebf.css.map": "/static/css/main.cce29ebf.css.map",
-    "main.77d943df.js.map": "/static/js/main.77d943df.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/curso-react/build/static/css/main.228182d8.css",
+    "main.js": "/curso-react/build/static/js/main.028912ba.js",
+    "static/js/787.28cb0dcd.chunk.js": "/curso-react/build/static/js/787.28cb0dcd.chunk.js",
+    "static/media/fiatlogo.png": "/curso-react/build/static/media/fiatlogo.af5905ec1daa48054cee.png",
+    "static/media/argo.jpg": "/curso-react/build/static/media/argo.24ea0d3d1b45896bdc0c.jpg",
+    "static/media/sandero.jpg": "/curso-react/build/static/media/sandero.1f336f46c6e5d5a91751.jpg",
+    "static/media/citroenlogo.png": "/curso-react/build/static/media/citroenlogo.ddedb4392f49c7a0a772.png",
+    "static/media/renaultlogo.png": "/curso-react/build/static/media/renaultlogo.622787985b05b3024c8b.png",
+    "index.html": "/curso-react/build/index.html",
+    "main.228182d8.css.map": "/curso-react/build/static/css/main.228182d8.css.map",
+    "main.028912ba.js.map": "/curso-react/build/static/js/main.028912ba.js.map",
+    "787.28cb0dcd.chunk.js.map": "/curso-react/build/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cce29ebf.css",
-    "static/js/main.77d943df.js"
+    "static/css/main.228182d8.css",
+    "static/js/main.028912ba.js"
   ]
 }
