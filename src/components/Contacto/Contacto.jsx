@@ -30,7 +30,7 @@ export const Contacto = () => {
 
     <div className='tarjetas'>
       <div className='face front'>
-      <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" alt=""/>
+      <img src="https://img.freepik.com/vector-premium/nuevo-logotipo-twitter-x-2023-descarga-vector-logotipo-twitter-x_691560-10809.jpg?w=2000" alt=""/>
       
       </div>
       <div className='face back letras'>
